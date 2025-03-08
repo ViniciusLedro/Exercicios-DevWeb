@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercício 9</title>
+    <style>
+      html {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100vw;
+        height: 100vh;
+        font-family: Calibri;
+      }
+
+      body {
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+        height: 100vh;
+      }
+
+      #menu {
+        display: flex;
+        align-items: center;
+        flex: 1 70px;
+        width: 100vw;
+        border-bottom: 1px solid #aaa;
+        box-sizing: border-box;
+        justify-content: space-between;
+      }
+      
+      #menu > img {margin-left: 10px;}
+
+      #texto-titulo {display: flex;
+        font-size: 40px;
+    font-weight: bold;
+margin-left: 10px;}
+
+    #avatar {display: flex;
+    flex-direction: row;
+justify-content: flex-end;
+align-items: center;
+margin-right: 10px;
+}
+
+#avatar > div {font-size: 14px;
+font-weight: bold;
+margin-right: 10px;}
+
+      #corpo {
+        width: 100vw;
+        background-color: #444;
+        display: flex;
+        flex: 100;
+        flex-direction: row;
+      }
+
+      #rodape {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        flex: 2 80px;
+        width: 100vw;
+        display: flex;
+        border-top: 1px solid #aaa;
+        box-sizing: border-box;
+        align-items: center;}
+
+       fieldset {width: 400px;
+        display: flex;
+        flex-direction: column;
+    border-radius: 10px;
+padding: 15px;
+color: #fff;}
+    
+    fieldset > div {display: flex;
+    flex-direction: column;
+margin-top: 10px;}
+
+label {font-size:  14px;}
+
+input {font-size: 16px;
+font-weight: bold;
+padding: 8px;
+border-radius: 5px;}
+
+.botao {background-color: #1E90FF;
+color: #fff;
+font-size: 15px;
+font-weight: bold;
+margin-left: 5px;}
+
+#botoes {display: flex;
+flex-direction: row;
+justify-content: flex-end;}
+
+#amarelo {
+    display: flex;
+    flex-direction: column;
+flex: 1 200px;}
+
+#amarelo > a {font-size: 16px;
+display: flex;
+text-decoration: none;
+font-weight: bold;
+color: #4169e1;
+border-bottom: 1px solid #4169e1;
+padding: 5px;}
+
+#amarelo >a:hover {
+color: #ff1493;
+border-bottom-color: #ff1493 ;
+}
+
+#ciano {display: flex;
+    align-items: center;
+    justify-content: center;
+flex: 10;}
+    
+
+    </style>
+  </head>
+  <body>
+    <div id="menu">
+        <div id="texto-titulo">
+        <img src="./img/css.png" alt="" width="60" height="60">
+        <div>CSS3</div>
+        </div>
+    
+    <div id="avatar">
+        <div>Bill Gates</div>
+        <img src="./img/avatar.jpg" alt="" width="42" height="42">
+    </div>
+    </div>
+    <div id="corpo">
+        <div id="amarelo">
+            <a href="./exercicio1.html">Exercício 1</a>
+            <a href="./exercicio2.html">Exercício 2</a>
+            <a href="./exercicio3.html">Exercício 3</a>
+            <a href="./exercicio4.html">Exercício 4</a>
+            <a href="./exercicio5.html">Exercício 5</a>
+            <a href="./exercicio6.html">Exercício 6</a>
+            <a href="./exercicio7.html">Exercício 7</a>
+            <a href="./exercicio8.html">Exercício 8</a>
+            <a href="./exercicio9.html">Exercício 9</a>
+            <a href="./exercicio10.html">Exercício 10</a>
+        </div>
+        <div id="ciano"><form action="">
+            <fieldset>
+                <legend>Login</legend>
+                <div>
+                    <label>e-mail</label>
+                    <input type="email" name="mail" id="">
+                </div>
+                <div>
+                    <label>Senha</label>
+                    <input type="password" name="senha">
+                </div>
+                <div id="botoes">
+                    <input type="submit" value="Enviar" class="botao">
+                    <input type="reset" value="Limpar" class="botao">
+                </div>
+            </fieldset>
+        </form></div>
+    </div>
+
+    <div id="rodape">
+        <img src="./img/Fatec.png" alt="" width="87" height="41">
+        <img src="./img/CPS.png" alt="" width="85" height="56">
+        <img src="./img/Brasao.png" alt="" width="81" height="54">
+    </div>
+  </body>
+</html>
