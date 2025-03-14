@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 5</title>
+    <style>
+        body {
+            display: flex;
+            margin: 0px;
+            height: 100vh;
+            
+        }
+
+        .container {
+            display: flex;
+            flex: 1;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        @media screen and (max-width: 800px){
+            .container {flex-direction: column;}
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <img src="./imagens/Fatec.png" alt="" width="87" height="41">
+    <img src="./imagens/CPS.png" alt="" width="85" height="56">
+    <img src="./imagens/Brasao.png" alt="" width="81" height="54">
+</div>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 1</title>
+    <style>
+body {
+    display: flex;
+    margin: 0px;
+    height: 100vh;
+}
+
+.container {display: flex;
+flex: 1;
+flex-direction: row;}
+
+.um{
+    flex: 1;
+    font-size: 30px;
+    background-color: lightyellow;
+}
+
+.dois{
+    flex: 1;
+    font-size: 30px;
+    background-color: lightgreen;
+}
+
+@media screen and (orientation: portrait){
+.container {display: flex;
+flex-direction: column;}
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="um">A</div>
+        <div class="dois">B</div>
+    </div>
+</body>
+</html>
